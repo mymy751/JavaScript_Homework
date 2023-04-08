@@ -5,7 +5,7 @@ const arrayB = [1, 2, 5, 6, 7, 8];
 
 // Viet Logic trong day
 const main = () => {
-
+    // abc
 };
 
 // Expect output would be [3, 4]
