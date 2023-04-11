@@ -5,7 +5,12 @@
  */
 
 function reverseString(str) {
-    return str;
+    var tmp = "";
+    for (var i=str.length-1; i>=0; i--){
+        tmp += str[i];
+    }
+    console.log(tmp);
 }
 
-reverseString("hello");
+//  
+reverseString("Hello halo");

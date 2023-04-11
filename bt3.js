@@ -7,7 +7,28 @@
     Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).
  */
 function getIndexToIns(arr, num) {
-    return num;
+    var chuoi =[];
+    var a=0;
+    for(var i=0; i<arr.length; i++){
+        chuoi[a]= arr[i];
+        a++;
+    }
+    chuoi[chuoi.length] = num;
+    console.log(chuoi);
+
+    var temp;
+    for (var i=0; i<chuoi.length-1; i++){
+        for(var j=0; j<chuoi.length-1; j++){
+            if(chuoi[j]>chuoi[j+1]){
+                temp = chuoi[j];
+                chuoi[j] = chuoi[j+1];
+                chuoi[j+1] = temp;
+            }
+        }
+    }
+    console.log("Chuoi sau khi đuoc săp xep là: "+ chuoi);
 }
     
-getIndexToIns([40, 60], 50);
+getIndexToIns([40, 60, 70, 90, 80], 50);
+
+
