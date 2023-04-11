@@ -27,6 +27,12 @@ function getIndexToIns(arr, num) {
         }
     }
     console.log("Chuoi sau khi đuoc săp xep là: "+ chuoi);
+
+    for(var i=0; i<chuoi.length; i++){
+        if(chuoi[i]==num){
+            console.log( "Sau khi mảng được sắp xếp thì " + num + " ở vị trí thứ " + i);
+        }
+    }
 }
     
 getIndexToIns([40, 60, 70, 90, 80], 50);
